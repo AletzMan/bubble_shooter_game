@@ -47,14 +47,14 @@ mutedButton.children[0].addEventListener('mousedown', function () {
     if (translateElement == "none" || translateElement == "matrix(1, 0, 0, 1, 0, 0)") {
         mutedButton.children[0].style.transform = "translateX(35px)";
         mutedButton.children[0].style.background = "rgb(34, 34, 34)";
-        mutedButton.style.backgroundImage = `url('../icons/mute.svg')`
+        mutedButton.style.backgroundImage = `url('./icons/mute.svg')`
         mutedButton.style.backgroundPositionX = '10px';
         soundPainballShoot.muted = true;
         soundExplosion.muted = true;
     } else {
         mutedButton.children[0].style.transform = "translateX(0px)";
         mutedButton.children[0].style.background = "#db9005";
-        mutedButton.style.backgroundImage = `url('../icons/up_volume.svg')`;
+        mutedButton.style.backgroundImage = `url('./icons/up_volume.svg')`;
         mutedButton.style.backgroundPositionX = '35px';
         soundPainballShoot.muted = false;
         soundExplosion.muted = false;
@@ -81,7 +81,7 @@ const bullet = document.addEventListener('mousedown', function (e) {
             newChild.style.left = (e.clientX - newChild.getBoundingClientRect().width / 2) + "px";
             newChild.style.top = (e.clientY - newChild.getBoundingClientRect().width / 2) + "px";
             let backgroundnewChild = GetRandomNumber(1, 9);
-            newChild.style.backgroundImage = `url('../images/mark_painball_${backgroundnewChild}.png')`;
+            newChild.style.backgroundImage = `url('./images/mark_painball_${backgroundnewChild}.png')`;
             let colornewChild = GetRandomNumber(1, 360);
             newChild.style.filter = `hue-rotate(${colornewChild}deg)`;
             deflectedShoot = true;
@@ -125,11 +125,11 @@ function AddSizeAndStylesToSquares() {
         containerAnimation.children[index].style.left = `${leftSquare}vw`;
         containerAnimation.children[index].style.transform = `translateY${topSquare}px`;
         if (index > 5 && index < 13) {
-            containerAnimation.children[index].style.backgroundImage = `url('../images/comp_${imageTargetID}.svg')`;
+            containerAnimation.children[index].style.backgroundImage = `url('./images/comp_${imageTargetID}.svg')`;
         } else if (index > 25 && index < 35) {
-            containerAnimation.children[index].style.backgroundImage = `url('../images/comp_${imageTargetID}.svg')`;
+            containerAnimation.children[index].style.backgroundImage = `url('./images/comp_${imageTargetID}.svg')`;
         } else {
-            containerAnimation.children[index].style.backgroundImage = `url('../images/comp_${backgroundSquare}.svg')`;
+            containerAnimation.children[index].style.backgroundImage = `url('./images/comp_${backgroundSquare}.svg')`;
         }
         containerAnimation.children[index].addEventListener("mousedown", function (e) {
             ComponentChange(e);
@@ -172,7 +172,7 @@ function ComponentChange(e) {
     if (!gameOver) {
         explosion.style.left = (e.target.getBoundingClientRect().left + e.target.getBoundingClientRect().width / 8) + "px";
         explosion.style.top = (e.target.getBoundingClientRect().top + e.target.getBoundingClientRect().width / 2) + "px";
-        if (e.target.style.backgroundImage.replace(/^url\(|\)$|"/g, '').replace('..', '') == targetImg.src.substring(targetImg.src.indexOf('/images')).replace(' ', '') && e.target.style.backgroundColor != "transparent") {
+        if (e.target.style.backgroundImage.replace(/^url\(|\)$|"/g, '').replace('.', '') == targetImg.src.substring(targetImg.src.indexOf('/images')).replace(' ', '') && e.target.style.backgroundColor != "transparent") {
             totalhits++;
             ParticlesExplosion();
             CountHits(true);
@@ -223,11 +223,11 @@ for (let index = 0; index < containerAnimation.children.length; index++) {
         containerAnimation.children[index].style.height = `${sizeSquare}vw`;
 
         if (index > 5 && index < 13) {
-            containerAnimation.children[index].style.backgroundImage = `url('../images/comp_${imageTargetID}.svg')`;
+            containerAnimation.children[index].style.backgroundImage = `url('./images/comp_${imageTargetID}.svg')`;
         } else if (index > 25 && index < 33) {
-            containerAnimation.children[index].style.backgroundImage = `url('../images/comp_${imageTargetID}.svg')`;
+            containerAnimation.children[index].style.backgroundImage = `url('./images/comp_${imageTargetID}.svg')`;
         } else {
-            containerAnimation.children[index].style.backgroundImage = `url('../images/comp_${backgroundSquare}.svg')`;
+            containerAnimation.children[index].style.backgroundImage = `url('./images/comp_${backgroundSquare}.svg')`;
         }
         containerAnimation.children[index].style.scale = 1;
         elementStates[index].hasCollided = false;
@@ -274,7 +274,7 @@ function checkCollision() {
             childElementPosition.bottom > scoreboardPosition.top) {
             //console.log(containerAnimation.children[i].style.backgroundImage.replace(/^url\(|\)$|"/g, '').replace('..', ''));
             //console.log(targetImg.src.substring(targetImg.src.indexOf('/images')).replace(' ',''));
-            if (containerAnimation.children[i].style.backgroundImage.replace(/^url\(|\)$|"/g, '').replace('..', '') === targetImg.src.substring(targetImg.src.indexOf('/images')).replace(' ', '')) {
+            if (containerAnimation.children[i].style.backgroundImage.replace(/^url\(|\)$|"/g, '').replace('.', '') === targetImg.src.substring(targetImg.src.indexOf('/images')).replace(' ', '')) {
                 totalmisses++;
                 if (totalmisses == maxMisses) GameOver();
                 UpdateStats();
