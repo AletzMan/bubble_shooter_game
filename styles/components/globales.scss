@@ -1,0 +1,32 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+    font-family: 'Raleway', sans-serif;;
+}
+
+:root {
+    --color_backdark: #111111;
+    --color_backdarkTwo: #222222;
+    --color_backmedium: #2e2e2e;
+    --color_backlight: #8f8f8f;
+    --color_secondback: #282b41;
+    --color_deactivated: #735F32;
+    --color_activated: #C69749;
+    --color_font: #f8f8f8;
+    --font_Display: 'DotGothic16', sans-serif;
+    --font-General: 'Raleway', sans-serif;
+
+}
+body{
+    background: var(--color_backmedium);
+    font-size: 62.5%;
+    font-family: var(--font-General);
+}

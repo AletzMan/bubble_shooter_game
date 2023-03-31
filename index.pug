@@ -1,0 +1,76 @@
+-var title = "Bubble Shooter Game";
+-let description = "";  
+-var index = 0;
+-var valueParticles = ["-", "+"];
+-var indexValues = 0;
+mixin CreateSpanParticles(numParticles)
+    -indexValues = 0;
+    -index = 0;
+    -while (index < numParticles)
+        div
+           -index ++
+
+mixin CreateSVGLigth(size)
+    svg(width=size height=size viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg")
+                    path(d="M53,24A21,21,0,1,0,24,43.413V50H40V43.413A21,21,0,0,0,53,24Z" style="fill:#e5e6eb" )
+                    path(d="M40.439,4.778a20.982,20.982,0,0,1-22.906,34.43A21.006,21.006,0,0,0,24,43.413V50H40V43.413a20.992,20.992,0,0,0,.439-38.635Z" style="fill:#d9dae2")
+                    path(d="M25,54v3a4,4,0,0,0,4,4h6a4,4,0,0,0,4-4V54Z" style="fill:#0468ad")
+                    path(d="M39.284,21.8c-.215-.518-.365-.88-.579-1.4l.544-2.12-1.534-1.534L35.6,17.3l-1.4-.579-1.113-1.882h-2.17L29.8,16.716l-1.4.579-2.12-.544-1.534,1.534.544,2.12-.579,1.4-1.882,1.113v2.17L24.716,26.2c.215.518.365.88.579,1.4l-.544,2.12,1.534,1.534,2.12-.544c.518.214,1.077,1.08,1.595,1.3V49h4V32c.518-.215,1.077-1.081,1.595-1.3l2.12.544,1.534-1.534-.544-2.12.579-1.4,1.882-1.113v-2.17ZM32,27a3,3,0,1,1,3-3A3,3,0,0,1,32,27Z" style="fill:#027de5")
+                    polygon(points="38 49 38 52 24 52 24 54 38 54 38 57 40 57 40 49 38 49" style="fill:#85b4e0")
+                    polygon(points="23 12 25 10 23 10 23 8 21 10 19 10 19 12 17 14 19 14 19 16 21 14 23 14 23 12" style="fill:#fff")
+                    path(d="M32,2a22,22,0,0,0-9,42.072V57a1,1,0,0,0,1,1h.1A5.009,5.009,0,0,0,29,62h6a5.009,5.009,0,0,0,4.9-4H40a1,1,0,0,0,1-1V44.072A22,22,0,0,0,32,2Zm7,54H25V54H37V52H25V50H39Zm-4,4H29a3,3,0,0,1-2.816-2H37.816A3,3,0,0,1,35,60Zm4.618-17.511a1,1,0,0,0-.618.925V48H25V43.414a1,1,0,0,0-.618-.925,20,20,0,1,1,15.236,0Z")
+
+
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" )
+        meta(name="game shooter bubble css javascript")
+        link(rel="shortcut icon" href="./icons/logo-tab.svg")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Raleway:wght@100;200;300;400;500;700&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="./styles/general.css")
+        link(rel="stylesheet", href="./styles/default.css")
+        title Bubble Shooter Game
+    body
+        main 
+            header(class="header")
+                img(class="header__ballone header__ball" src="./images/mark_painball_1.png")
+                img(class="header__balltwo header__ball" src="./images/mark_painball_2.png")
+                img(class="header__ballthree header__ball" src="./images/mark_painball_3.png")
+                img(class="header__ballfour header__ball" src="./images/mark_painball_4.png")
+                img(class="header__shooter" src="./icons/crosshair2.svg")
+                h1(class="header__title")=title
+                button(class="header__howtoplay") HOW TO PLAY
+                div(class="header__window")
+                    ul(class="header__message")
+                        li(class="header__list header__list--title") #[h2 HOW TO PLAY]
+                        li(class="header__list") The goal of the game is to get the highest number of hits
+                        li(class="header__list") Shoot the bubbles containing the selected target
+                        li(class="header__list") You have a number of shots available
+                        li(class="header__list") You have a limit of missed shots
+                        li(class="header__list") Do not let the bubbles escape with the target.
+            audio(id="soundExplosion" src="./sounds/explosion2.mp3")
+            audio(id="painball_shoot" src="./sounds/paintball_shoot.mp3")
+            div(class="scoreboard")
+                p(id="hits") HITS: #[span  0]
+                p(id="misses") MISSES: #[span  0]
+                p(id="shoots") SHOOTS: #[span  0]
+                p(id="time") TIME: #[span  00]
+                p(id="target") TARGET:
+                img(id="targetImg" src="")
+                div(id="mutedButton") #[span ]
+            div(id="containerAnimation")
+            div(class="explosion")
+                span
+                +CreateSpanParticles("60")
+            div(class="gameovercard")
+                p(class="gameovercard__letters") #[span G]#[span A]#[span M]#[span E] #[span O]#[span V]#[span E]#[span R] 
+                a(class="gameovercard__restart" href="/" title="start game") PRESS TO START          
+                //div(class="bulletMark")
+            
+    script(src="./scripts/default.js")  
