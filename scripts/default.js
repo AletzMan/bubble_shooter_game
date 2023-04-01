@@ -18,7 +18,7 @@ const windosHowToPlay = document.querySelector(".header__window");
 
 
 let imageTargetID = GetRandomNumber(1, 41);
-targetImg.src = `../images/comp_${imageTargetID}.svg`;
+targetImg.src = `./images/comp_${imageTargetID}.svg`;
 let deflectedShoot = true;
 let elementStates = [];
 let startTime = 0;
