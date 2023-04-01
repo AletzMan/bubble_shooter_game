@@ -3,26 +3,25 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#778D9A;}
-	.st1{fill:#DCE2E5;}
-	.st2{fill:#B4CDD2;}
-	.st3{fill:#484246;}
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
 </style>
 <g>
-	<path class="st0" d="M133.3,93.5H17.2v11.9h0c-0.4,8.9,5.3,17.8,17.1,24.6c22.7,13.1,59.5,13.2,82.1,0.1
-		c11.3-6.6,17-15.2,16.9-23.8l0,0V93.5z"/>
 	
-		<ellipse transform="matrix(5.421390e-03 -1 1 5.421390e-03 -18.6911 168.2226)" class="st1" cx="75.2" cy="93.5" rx="33.5" ry="58.1"/>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="8.523686e-03" y1="150.129" x2="4.183092e-02" y2="150.0886" gradientTransform="matrix(2454.3228 0 0 -2187.2434 16.0698 328374.1562)">
+		<stop  offset="0" style="stop-color:#41D1FF"/>
+		<stop  offset="1" style="stop-color:#BD34FE"/>
+	</linearGradient>
+	<path class="st0" d="M144.4,25.7L78.8,143.2c-1.4,2.4-4.8,2.4-6.2,0L5.6,25.7c-1.5-2.6,0.7-5.8,3.7-5.3L75,32.2
+		c0.4,0.1,0.8,0.1,1.3,0l64.4-11.7C143.7,19.9,145.9,23.1,144.4,25.7z"/>
 	
-		<ellipse transform="matrix(5.423367e-03 -1 1 5.423367e-03 -18.6913 168.2227)" class="st2" cx="75.2" cy="93.5" rx="31.4" ry="54.4"/>
-	<path class="st0" d="M131.5,42.5L19,38.6v46.8h0c-0.3,8.6,5.2,17.3,16.6,23.8c22,12.7,57.6,12.8,79.5,0.1c11-6.3,16.4-14.7,16.3-23
-		l0,0V42.5z"/>
-	
-		<ellipse transform="matrix(5.420305e-03 -1 1 5.420305e-03 32.343 117.4646)" class="st2" cx="75.2" cy="42.5" rx="32.5" ry="56.2"/>
-	
-		<ellipse transform="matrix(5.420305e-03 -1 1 5.420305e-03 32.343 117.4646)" class="st1" cx="75.2" cy="42.5" rx="32.5" ry="56.2"/>
-	
-		<ellipse transform="matrix(5.419997e-03 -1 1 5.419997e-03 31.5238 114.3736)" class="st2" cx="73.3" cy="41.3" rx="31" ry="53.8"/>
-	<path class="st3" d="M103.2,14.4L26.6,58.6C14.1,46.2,17,30,35.3,19.4C53.7,8.8,81.7,7.2,103.2,14.4z"/>
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-0.6926" y1="150.005" x2="-0.6887" y2="149.9555" gradientTransform="matrix(1125.4194 0 0 -2051.6592 862.868 307766.3438)">
+		<stop  offset="0" style="stop-color:#FFEA83"/>
+		<stop  offset="8.299999e-02" style="stop-color:#FFDD35"/>
+		<stop  offset="1" style="stop-color:#FFA800"/>
+	</linearGradient>
+	<path class="st1" d="M106.4,5l-48.6,9.5c-0.8,0.2-1.4,0.8-1.4,1.6l-3,50.5c-0.1,1,0.7,1.8,1.7,1.9c0.2,0,0.3,0,0.5,0L69,65.4
+		c1.3-0.3,2.4,0.8,2.1,2.1l-4,19.7c-0.3,1.3,1,2.5,2.3,2.1l8.4-2.5c1.3-0.4,2.5,0.7,2.3,2.1l-6.4,30.9c-0.4,1.9,2.2,3,3.2,1.3
+		l0.7-1.1l39.6-79c0.7-1.3-0.5-2.8-1.9-2.6L101.4,41c-1.3,0.3-2.4-1-2.1-2.2l9.1-31.5C108.8,6,107.7,4.8,106.4,5L106.4,5z"/>
 </g>
 </svg>

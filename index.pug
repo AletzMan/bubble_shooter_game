@@ -37,7 +37,8 @@ html(lang="en")
         link(rel="stylesheet", href="./styles/default.css")
         title Bubble Shooter Game
     body
-        main 
+        main(class="main")
+            div(class="main__image")
             header(class="header")
                 img(class="header__ballone header__ball" src="./images/mark_painball_1.png")
                 img(class="header__balltwo header__ball" src="./images/mark_painball_2.png")
@@ -64,13 +65,13 @@ html(lang="en")
                 p(id="target") TARGET:
                 img(id="targetImg" src="")
                 div(id="mutedButton") #[span ]
-            div(id="containerAnimation")
+            div(class="containeranimation")
             div(class="explosion")
                 span
                 +CreateSpanParticles("60")
             div(class="gameovercard")
                 p(class="gameovercard__letters") #[span G]#[span A]#[span M]#[span E] #[span O]#[span V]#[span E]#[span R] 
-                a(class="gameovercard__restart" href="/" title="start game") PRESS TO START          
+                a(class="gameovercard__restart" href="javascript:location.reload()" title="start game") PRESS TO START          
                 //div(class="bulletMark")
             
     script(src="./scripts/default.js")  

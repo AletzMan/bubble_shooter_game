@@ -14,7 +14,8 @@
     <title>Bubble Shooter Game</title>
   </head>
   <body>
-    <main> 
+    <main class="main">
+      <div class="main__image"></div>
       <header class="header"><img class="header__ballone header__ball" src="./images/mark_painball_1.png"><img class="header__balltwo header__ball" src="./images/mark_painball_2.png"><img class="header__ballthree header__ball" src="./images/mark_painball_3.png"><img class="header__ballfour header__ball" src="./images/mark_painball_4.png"><img class="header__shooter" src="./icons/crosshair2.svg">
         <h1 class="header__title">Bubble Shooter Game</h1>
         <button class="header__howtoplay">HOW TO PLAY</button>
@@ -41,7 +42,7 @@
         <p id="target">TARGET:</p><img id="targetImg" src="">
         <div id="mutedButton"><span></span></div>
       </div>
-      <div id="containerAnimation"></div>
+      <div class="containeranimation"></div>
       <div class="explosion"><span></span>
         <div>
         </div>
@@ -165,7 +166,7 @@
         </div>
       </div>
       <div class="gameovercard">
-        <p class="gameovercard__letters"><span>G</span><span>A</span><span>M</span><span>E</span> <span>O</span><span>V</span><span>E</span><span>R</span> </p><a class="gameovercard__restart" href="/" title="start game">PRESS TO START          </a>
+        <p class="gameovercard__letters"><span>G</span><span>A</span><span>M</span><span>E</span> <span>O</span><span>V</span><span>E</span><span>R</span> </p><a class="gameovercard__restart" href="javascript:location.reload()" title="start game">PRESS TO START          </a>
         <!--div(class="bulletMark")-->
       </div>
     </main>

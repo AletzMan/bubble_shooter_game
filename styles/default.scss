@@ -7,6 +7,24 @@ body {
     overflow: hidden;
 }
 
+.main {
+    position: relative;
+    overflow: hidden;
+
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/background.jpg');
+        backdrop-filter: opacity(0.1);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        opacity: 0.55;
+        filter: brightness(40%);
+    }
+}
 
 :root {
     touch-action: pan-x pan-y;
@@ -28,7 +46,7 @@ body {
         z-index: 2;
     }
 
-    &__howtoplay{
+    &__howtoplay {
         position: absolute;
         bottom: 0;
         right: 0.5rem;
@@ -40,13 +58,13 @@ body {
         transition: all 0.3s;
         cursor: pointer;
 
-        &:hover{
+        &:hover {
             background-color: #284d7e;
             border-color: #FFFFFFcc;
         }
     }
 
-    &__window{
+    &__window {
         position: absolute;
         display: none;
         align-items: center;
@@ -61,21 +79,21 @@ body {
         z-index: 2;
     }
 
-    &__message{
+    &__message {
         background-color: #0e141ddd;
         padding: 1.5rem;
         border-radius: 0.3rem;
         border: 1px solid #c5c5c588;
     }
 
-    &__list{
+    &__list {
         //list-style: none;
-        list-style-type: circle ;
+        list-style-type: circle;
         color: #ececec;
         font-size: 1rem;
         padding: 0.5rem 0.5rem;
 
-        &--title{
+        &--title {
             list-style: none;
             text-align: center;
             color: #66a0eb;
@@ -83,30 +101,33 @@ body {
 
     }
 
-    &__ball{
+    &__ball {
         position: absolute;
         opacity: 0.4;
         z-index: 1;
 
-        &one{
+        &one {
             right: 30%;
             top: 1rem;
         }
-        &two{
+
+        &two {
             left: 1rem;
             top: 0;
         }
-        &three{
+
+        &three {
             left: 30%;
             bottom: 0;
         }
-        &four{
+
+        &four {
             right: 1rem;
             top: 0;
         }
     }
 
-    &__shooter{
+    &__shooter {
         position: absolute;
         width: 3.5rem;
         left: 9.5rem;
@@ -139,18 +160,18 @@ body {
         gap: 0.2rem;
     }
 
-    p {       
+    p {
 
         @media (max-width: 700px) {
-           font-size: 0.8rem;
+            font-size: 0.8rem;
         }
 
-        & span{
+        & span {
             @media (max-width: 700px) {
                 width: 100%;
                 font-size: 1.1rem;
                 text-align: center;
-             }
+            }
         }
     }
 
@@ -254,10 +275,10 @@ body {
         height: 80%;
         min-height: 40px;
         justify-self: left;
-        background: #87dfe299;
-        box-shadow: 2px 2px 3px 1px #3a3a3a inset;
+        background: #d9feff65;
+        box-shadow: 2px 2px 2px 1px #3a3a3a inset;
         border-radius: 0 5px 5px 0;
-        padding: 6px 10px 6px 10px;
+        padding: 1px;
 
         @media (max-width: 700px) {
             grid-column: 4 / 5;
@@ -277,7 +298,7 @@ body {
 
 }
 
-#containerAnimation {
+.containeranimation {
     display: flex;
     align-items: center;
     position: relative;
@@ -303,9 +324,9 @@ body {
         top: 0;
         transition: top 0.8s linear;
         padding: 30px;
-        box-shadow: -10px -10px 7px 25px #FFFFFF18 inset, -7px -1px 7px 5px #8f8f8f65 inset;
+        box-shadow: -10px -10px 7px 25px #FFFFFF05 inset, -7px -1px 7px 5px #8f8f8f35 inset;
 
-        img {
+        & img {
             width: 100%;
             background-size: cover;
         }
@@ -424,7 +445,7 @@ body {
     //background-image: url("../images/mark_painball.png");
     background-repeat: no-repeat;
     background-size: contain;
-    opacity: 0.8;
+    opacity: 0.9;
     cursor: url("../icons/crosshair3.svg")16 16, auto;
     z-index: -2;
     animation: markBullet 5s linear 4s;
@@ -445,7 +466,7 @@ body {
     transition: transform 1.3s cubic-bezier(.97, .15, .02, 1.45);
     cursor: url("../icons/crosshair3.svg")16 16, auto;
 
-    &__restart{
+    &__restart {
         position: absolute;
         bottom: -1.2rem;
         color: #efe1ff;
@@ -457,12 +478,12 @@ body {
         padding: 0.5rem 1.3rem;
         border-radius: 1rem;
 
-        &:hover{
+        &:hover {
             background-color: #223650;
         }
     }
 
-   &__letters>span {
+    &__letters>span {
         position: absolute;
         font-size: 7rem;
         top: 10%;
@@ -480,35 +501,39 @@ body {
         animation-iteration-count: infinite;
         animation-direction: alternate;
 
-        @media (min-width: 988px) and (max-width: 1376px)  {
+        @media (min-width: 988px) and (max-width: 1376px) {
             font-size: 4rem;
         }
-        @media (min-width: 300px) and (max-width: 1375px)  {
+
+        @media (min-width: 300px) and (max-width: 1375px) {
             font-size: 3.5rem;
         }
 
         @for $i from 1 to 9 {
             &:nth-child(#{$i}) {
                 animation-delay: #{(1 + $i)/4}s;
-               
+
 
                 @if($i < 3) {
                     right: calc(75vw - #{$i*6}vw);
-                    @media (min-width: 300px) and (max-width: 600px)  {
+
+                    @media (min-width: 300px) and (max-width: 600px) {
                         right: calc(85vw - #{$i*8}vw);
                     }
                 }
 
                 @else if($i < 5) and ($i > 2) {
                     right: calc(74vw - #{$i*6}vw);
-                    @media (min-width: 300px) and (max-width: 600px)  {
+
+                    @media (min-width: 300px) and (max-width: 600px) {
                         right: calc(76vw - #{$i*6}vw);
                     }
                 }
 
                 @else {
                     right: calc(70vw - #{$i*6}vw);
-                    @media (min-width: 300px) and (max-width: 600px)  {
+
+                    @media (min-width: 300px) and (max-width: 600px) {
                         right: calc(82vw - #{$i*9}vw);
                     }
                 }
@@ -516,7 +541,7 @@ body {
         }
     }
 
-    
+
 
 }
 

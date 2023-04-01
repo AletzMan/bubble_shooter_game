@@ -3,76 +3,14 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
 <style type="text/css">
-	.Sombra_x0020_paralela{fill:none;}
-	.Neón_x0020_azul_x0020_grueso{fill:none;stroke:#0073BC;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;}
-	.Agua_x0020_iluminada{fill:url(#SVGID_1_);stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:1;}
-	.Resalte_x0020_en_x0020_negro_x0020_{fill:url(#SVGID_2_);stroke:#FFFFFF;stroke-width:0.3629;stroke-miterlimit:1;}
-	.Coco_GS{fill-rule:evenodd;clip-rule:evenodd;fill:#FFDD00;}
-	.st0{fill:#322F34;}
-	.st1{enable-background:new    ;}
-	.st2{clip-path:url(#SVGID_4_);}
-	.st3{fill:#FB6767;}
-	.st4{fill:#FD7878;}
-	.st5{fill:#EA6060;}
-	.st6{opacity:0.2;}
-	.st7{fill:#312E33;}
-	.st8{opacity:0.2;fill:#F2F0ED;}
+	.st0{fill:#1B73BA;}
+	.st1{fill:#1C88C7;}
+	.st2{fill:#FFFFFF;}
 </style>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="6.123234e-17" y2="-1">
-	<stop  offset="0" style="stop-color:#1D59F4"/>
-	<stop  offset="0.618" style="stop-color:#2D65EE"/>
-	<stop  offset="0.6292" style="stop-color:#3864F3"/>
-	<stop  offset="0.9831" style="stop-color:#00DDFC"/>
-</linearGradient>
-<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="6.123234e-17" y2="-1">
-	<stop  offset="0" style="stop-color:#060606"/>
-	<stop  offset="0.618" style="stop-color:#000000"/>
-	<stop  offset="0.6292" style="stop-color:#000000"/>
-	<stop  offset="0.9831" style="stop-color:#000000"/>
-</linearGradient>
 <g>
-	<path class="st0" d="M85.7,142.6L85.7,142.6c-1.3,0-2.4-1.1-2.4-2.4l0-60.7c0-4.8-3.5-10.9-7.7-13.3l-4-2.3c-1.6-0.9-3-1.1-3.9-0.6
-		c-0.9,0.5-1.4,1.9-1.4,3.7l0,60.7c0,1.3-1.1,2.4-2.4,2.4l0,0c-1.3,0-2.4-1.1-2.4-2.4l0-60.7c0-3.5,1.4-6.4,3.8-7.8
-		c2.4-1.4,5.5-1.2,8.6,0.6l4,2.3c5.6,3.2,10,10.9,10,17.4l0,60.7C88,141.5,87,142.6,85.7,142.6z"/>
-	<g>
-		<g class="st1">
-			<g class="st1">
-				<defs>
-					<path id="SVGID_3_" class="st1" d="M106.3,60.9l-0.2,5.8c0,4.6-3.1,9.2-9.1,12.8c-12.2,7.1-32.1,7.1-44.4,0
-						c-6.2-3.6-9.3-8.3-9.3-12.9l0.2-5.8c0,4.7,3.1,9.4,9.3,12.9c12.3,7.1,32.2,7.1,44.4,0C103.3,70.1,106.3,65.5,106.3,60.9z"/>
-				</defs>
-				<use xlink:href="#SVGID_3_"  style="overflow:visible;fill:#EA6060;"/>
-				<clipPath id="SVGID_4_">
-					<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
-				</clipPath>
-				<g class="st2">
-					<path class="st3" d="M106.3,60.9l-0.2,5.8c0,4.6-3.1,9.2-9.1,12.8c-4.1,2.4-9,3.9-14.2,4.7l0.2-5.8c5.2-0.8,10.1-2.4,14.2-4.7
-						C103.3,70.1,106.3,65.5,106.3,60.9L106.3,60.9z"/>
-					<path class="st3" d="M83,78.4l-0.2,5.8c-5.2,0.8-10.6,0.8-15.8,0l0.2-5.8C72.4,79.2,77.9,79.2,83,78.4L83,78.4z"/>
-					<path class="st3" d="M67.2,78.4L67,84.2c-5.3-0.8-10.3-2.4-14.4-4.8c-0.8-0.5-1.6-1-2.3-1.5l0.2-5.8c0.7,0.5,1.5,1,2.3,1.5
-						C57,76,62,77.6,67.2,78.4L67.2,78.4z"/>
-					<path class="st3" d="M44,63.7c-0.3-1-0.4-2-0.4-3l-0.2,5.8c0,1,0.1,2,0.4,3c0.8,3,3,6,6.5,8.5l0.2-5.8
-						C47,69.6,44.8,66.7,44,63.7z"/>
-				</g>
-			</g>
-			<g>
-				<path class="st4" d="M97.1,47.9c12.3,7.1,12.4,18.6,0.1,25.7s-32.1,7.1-44.4,0C40.6,66.5,40.5,55,52.7,47.9
-					C64.9,40.8,84.8,40.8,97.1,47.9z"/>
-			</g>
-		</g>
-	</g>
-	<g>
-		<path class="st3" d="M102.7,58.3V32.9C102.7,17.5,90.2,5,74.8,5l0,0C59.5,5,47,17.5,47,32.9v25.4H102.7z"/>
-		<g>
-			<path class="st5" d="M94.6,69.7c-2,1.2-4.2,2.1-6.6,2.8c-1.5,0.5-3.1,0.9-4.7,1.1c-5.5,1-11.4,1-16.8,0c-1.6-0.3-3.2-0.7-4.7-1.1
-				c-2.4-0.7-4.6-1.7-6.6-2.8c-10.9-6.3-11-16.5-0.1-22.8c10.9-6.3,28.5-6.3,39.4,0C105.4,53.2,105.5,63.4,94.6,69.7z"/>
-		</g>
-	</g>
-	<g class="st6">
-		<path class="st7" d="M66.5,48.3l18.8-19.3l-23.5-1.1l0,29.5l0,0v15.2c1.5,0.5,3.1,0.9,4.7,1.1V55.5h0V48.3z"/>
-		<path class="st7" d="M88,55.5l0-14.2l0-7L75,48.6l0,12l8.3,4.8v8.3c1.6-0.3,3.2-0.7,4.7-1.1L88,55.5L88,55.5z"/>
-	</g>
-	<path class="st8" d="M66.9,26.1c-4.5,5.5-10.8,7.7-14.1,5c-3.3-2.7-2.4-9.4,2.1-14.8c4.5-5.5,10.8-7.7,14.1-5
-		C72.3,14,71.4,20.6,66.9,26.1z"/>
+	<path class="st0" d="M31.2,122.5L22.5,15.1l105.1,0.3l-9.3,107.3l-42.8,12.4L31.2,122.5z"/>
+	<path class="st1" d="M75.4,124.6V25.3l43.3,0.2l-7.7,88.8L75.4,124.6z"/>
+	<path class="st2" d="M107.9,38H41.3l1.8,13h31.6L43.7,64.3l1.8,12.5h45.8l-1.7,17.6l-15.5,3l-14-3.6l-1.1-9.9H46.1l1.7,20.7
+		l27.7,7.7l26.6-8.4l3.4-40.4H77.3l30.6-12.7L107.9,38z"/>
 </g>
 </svg>

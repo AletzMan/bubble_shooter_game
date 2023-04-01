@@ -1,6 +1,6 @@
 "use strict";
 
-var containerAnimation = document.getElementById("containerAnimation");
+var containerAnimation = document.querySelector(".containeranimation");
 var explosion = document.querySelector(".explosion");
 var soundExplosion = document.getElementById("soundExplosion");
 var soundPainballShoot = document.getElementById("painball_shoot");
@@ -26,7 +26,7 @@ var maxMisses = 20;
 var gameOver = false;
 var viewWindowHowToPlay = false;
 shoots.innerText = totalShots;
-CreateSquares(45);
+CreateSquares(40);
 buttonHowToPlay.addEventListener('mousedown', function () {
   viewWindowHowToPlay = !viewWindowHowToPlay;
   if (viewWindowHowToPlay) windosHowToPlay.style.display = "flex";else windosHowToPlay.style.display = "none";
@@ -64,7 +64,7 @@ function CreateSquares(numberSquares) {
 }
 
 var bullet = document.addEventListener('mousedown', function (e) {
-  if (e.clientY > 222 && totalShots && !gameOver) {
+  if (e.clientY > 115 && totalShots && !gameOver) {
     var newChild = document.createElement("div");
     newChild.className = "bulletMark";
     setTimeout(function () {
@@ -91,7 +91,7 @@ var bullet = document.addEventListener('mousedown', function (e) {
     console.log(deflectedShoot);
   }
 
-  if (e.clientY > 222) {
+  if (e.clientY > 115) {
     soundPainballShoot.currentTime = 0;
     soundPainballShoot.play();
   }
@@ -104,9 +104,9 @@ var bullet = document.addEventListener('mousedown', function (e) {
 function AddSizeAndStylesToSquares() {
   for (var index = 0; index < containerAnimation.childElementCount; index++) {
     var sizeSquare = GetRandomNumber(3, 7);
-    var leftSquare = GetRandomNumber(5, 90);
+    var leftSquare = GetRandomNumber(10, 85);
     var topSquare = GetRandomNumber(900, 1000);
-    var timeAnimation = GetRandomNumberFloat(8, 13);
+    var timeAnimation = GetRandomNumberFloat(7, 13);
     var timeDelay = GetRandomNumberFloat(0.5, 8);
     var animationnumber = GetRandomNumber(1, 3);
     var backgroundSquare = GetRandomNumber(1, 41);
@@ -122,7 +122,7 @@ function AddSizeAndStylesToSquares() {
 
     if (index > 5 && index < 13) {
       containerAnimation.children[index].style.backgroundImage = "url('./images/comp_".concat(imageTargetID, ".svg')");
-    } else if (index > 25 && index < 35) {
+    } else if (index > 25 && index < 33) {
       containerAnimation.children[index].style.backgroundImage = "url('./images/comp_".concat(imageTargetID, ".svg')");
     } else {
       containerAnimation.children[index].style.backgroundImage = "url('./images/comp_".concat(backgroundSquare, ".svg')");
@@ -211,7 +211,7 @@ function CountHits(typeOfShot) {
 
 var _loop = function _loop(index) {
   containerAnimation.children[index].addEventListener("animationiteration", function () {
-    var leftSquare = GetRandomNumber(10, 90);
+    var leftSquare = GetRandomNumber(10, 80);
     var backgroundSquare = GetRandomNumber(1, 41);
     var sizeSquare = GetRandomNumber(3, 7);
     containerAnimation.children[index].style.opacity = 1;

@@ -1,4 +1,4 @@
-const containerAnimation = document.getElementById("containerAnimation");
+const containerAnimation = document.querySelector(".containeranimation");
 const explosion = document.querySelector(".explosion");
 const soundExplosion = document.getElementById("soundExplosion");
 const soundPainballShoot = document.getElementById("painball_shoot");
@@ -29,7 +29,7 @@ let maxMisses = 20;
 let gameOver = false;
 let viewWindowHowToPlay = false;
 shoots.innerText = totalShots;
-CreateSquares(45);
+CreateSquares(40);
 
 buttonHowToPlay.addEventListener('mousedown', () => {
     viewWindowHowToPlay = !viewWindowHowToPlay;
@@ -73,7 +73,7 @@ function CreateSquares(numberSquares) {
 }
 
 const bullet = document.addEventListener('mousedown', function (e) {
-    if (e.clientY > 222 && totalShots && !gameOver) {
+    if (e.clientY > 115 && totalShots && !gameOver) {
         const newChild = document.createElement("div");
         newChild.className = "bulletMark";
         setTimeout(() => {
@@ -97,7 +97,7 @@ const bullet = document.addEventListener('mousedown', function (e) {
         }
         console.log(deflectedShoot)
     }
-    if (e.clientY > 222) {
+    if (e.clientY > 115) {
         soundPainballShoot.currentTime = 0;
         soundPainballShoot.play();
     }
@@ -109,9 +109,9 @@ const bullet = document.addEventListener('mousedown', function (e) {
 function AddSizeAndStylesToSquares() {
     for (let index = 0; index < containerAnimation.childElementCount; index++) {
         let sizeSquare = GetRandomNumber(3, 7);
-        let leftSquare = GetRandomNumber(5, 90);
+        let leftSquare = GetRandomNumber(10, 85);
         let topSquare = GetRandomNumber(900, 1000);
-        let timeAnimation = GetRandomNumberFloat(8, 13);
+        let timeAnimation = GetRandomNumberFloat(7, 13);
         let timeDelay = GetRandomNumberFloat(0.5, 8);
         let animationnumber = GetRandomNumber(1, 3);
         let backgroundSquare = GetRandomNumber(1, 41);
@@ -126,7 +126,7 @@ function AddSizeAndStylesToSquares() {
         containerAnimation.children[index].style.transform = `translateY${topSquare}px`;
         if (index > 5 && index < 13) {
             containerAnimation.children[index].style.backgroundImage = `url('./images/comp_${imageTargetID}.svg')`;
-        } else if (index > 25 && index < 35) {
+        } else if (index > 25 && index < 33) {
             containerAnimation.children[index].style.backgroundImage = `url('./images/comp_${imageTargetID}.svg')`;
         } else {
             containerAnimation.children[index].style.backgroundImage = `url('./images/comp_${backgroundSquare}.svg')`;
@@ -211,7 +211,7 @@ function CountHits(typeOfShot) {
 
 for (let index = 0; index < containerAnimation.children.length; index++) {
     containerAnimation.children[index].addEventListener("animationiteration", function () {
-        let leftSquare = GetRandomNumber(10, 90);
+        let leftSquare = GetRandomNumber(10, 80);
         let backgroundSquare = GetRandomNumber(1, 41);
         let sizeSquare = GetRandomNumber(3, 7);
         containerAnimation.children[index].style.opacity = 1;
